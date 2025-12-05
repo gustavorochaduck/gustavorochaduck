@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../imgs/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.MainBar {
+    padding: 2em;
+    display: flex;
+    color: whitesmoke;
+    font-family: "Lexend Zetta", sans-serif;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.logo p {
+    display: inline;
+    text-align: center;
+    height: fit-content;
+    padding-left: 1.5em;
+    font-size: large;
+}
+
+.logo h1 {
+    border-right: 1px solid whitesmoke;
+    padding-right: .5em;
+    writing-mode: vertical-lr;
+}
+
+.MainPanel {
+    color: whitesmoke;
+    display: flex;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(70px);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    padding: 4em;
+    align-self: center;
+    width: fit-content;
+    gap: 3em;
+
+}
+
+.Left {
+    display: flex;
+    flex-direction: column;
+    font-family: "Lexend Zetta", sans-serif;
+    gap: 7px;
+
+}
+
+.Left h1 {
+    letter-spacing: -2px;
+}
+
+.Left p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Left img {
+    font-family: 'Courier New', Courier, monospace;
+    align-self: center;
+    width: 270px;
+    align-self: flex-start;
+    border-radius: 15px;
+}
+
+.Rigth {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 550px;
+    text-align: left;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.Content {
+    border-left: 2px solid rgba(255, 255, 255, 0.25);
+    padding: 1em;
+}
+.Icons{
+    display: flex;
+    align-self: flex-end;
+    padding: 1em;
+gap: 30px;
+}

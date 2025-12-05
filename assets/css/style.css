@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    background-image: url(../imgs/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #090b0a;
+    font-family: "Lexend Zetta", sans-serif;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+.MainBar {
+    display: flex;
+    width: 99%;
+    padding: 2em;
+    justify-content: space-between;
+    margin-bottom: 15%;
+
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+.hamburgerContent {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    display: inline;
+    text-align: center;
+    height: fit-content;
+    padding-left: 1.5em;
+    font-size: large;
+}
+
+.logo h1 {
+    border-right: 1px solid whitesmoke;
+    padding-right: .5em;
+    writing-mode: vertical-lr;
+}
+
+.links {
+    display: flex;
+    justify-content: right;
+    margin-bottom: auto;
+    gap: 40%;
+    align-items: center;
+}
+
+/* .links i{
+    display: none;
+    padding-right: 20px;
+    transition: 1s;
+}
+.links i:hover{
+    display: flex;
+    font-size: 8pt;
+    width: auto;
+} */
+.navigation {
+    display: flex;
+    min-width: fit-content;
+    width: 250px;
+    flex-direction: column;
+}
+
+.navigation a {
+    display: flex;
+    font-size: small;
+    padding: 5%;
+    width: fit-content;
+    text-decoration: none;
+    color: whitesmoke;
+    align-items: center;
+}
+
+.navigation a>i {
+    display: none;
+}
+
+.navigation a:hover>i {
+    display: block;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h1 {
+    font-size: 80px;
+    margin-bottom: 3%;
+}
+
+.content a {
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    padding: 1em;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.content a:hover {
+    background-color: #f3cec8;
+    color: black;
+    border-color: black;
+
+}
+
+.buttons {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.LeftButtons {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    border-right: 1px solid whitesmoke;
+    padding: 3em;
+}
+
+.RigthButtons {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 3em;
+
+}
+
+@media (max-width: 800px) {
+    .MainBar button {
+        display: inline;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+
+    }
+
+    .logo {
+        justify-self: center;
+    }
+
+    .logo h1 {
+        writing-mode: horizontal-tb;
+        padding-right: 10px;
+        border-right: none;
+        border-bottom: 1px solid whitesmoke;
+        padding-bottom: 5px;
+    }
+
+    .logo p {
+        display: none;
+    }
+
+    .content h1 {
+        font-size: 40px;
+        margin-bottom: 2em;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .LeftButtons {
+        border-right: none;
+        border-bottom: 1px solid whitesmoke;
+    }
+
+    .hamburgerMenu {
+        display: block;
+        align-content: center;
+    }
+
+    .hamburgerMenu img {
+        height: 40px;
+    }
+
+    #check:checked~.hamburgerContent {
+        display: flex;
+    }
+}

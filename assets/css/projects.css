@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px  solidred; */
+
+}
+
+body {
+    background-image: url(../imgs/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.Content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Panel {
+    margin-top: 25vh;
+    color: whitesmoke;
+    font-family: "Lexend Zetta", sans-serif;
+    letter-spacing: -2px;
+    gap: 20px;
+    padding: 2em;
+    border: 1px solid rgba(255, 255, 255, 0.44);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(70px);
+}
+
+.Panel a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.FotoEmulation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 450px;
+    border: 2px solid mediumseagreen;
+    border-radius: 15px;
+}
