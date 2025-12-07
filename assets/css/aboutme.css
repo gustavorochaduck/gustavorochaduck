@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    background-color: #0a1314;
 }
 
 .MainBar {
