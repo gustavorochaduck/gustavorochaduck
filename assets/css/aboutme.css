@@ -75,6 +75,7 @@ body {
     -webkit-backdrop-filter: blur(70px);
     border: 2px solid rgba(255, 255, 255, 0.25);
     padding: 4em;
+    margin-top: 2em;
     align-self: center;
     width: fit-content;
     gap: 3em;
@@ -124,4 +125,23 @@ body {
     align-self: flex-end;
     padding: 1em;
 gap: 30px;
+}
+@media (max-width: 1000px) {
+
+    .MainPanel{
+        flex-direction: column;
+        width: fit-content;
+        padding: 0;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .Left{
+        align-items: center;
+    }
+    .Left img{
+        align-self: center;
+    }
+    .Rigth{
+        width: fit-content;
+    }
 }
