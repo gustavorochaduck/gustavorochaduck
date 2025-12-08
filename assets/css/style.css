@@ -15,6 +15,8 @@ body {
     color: whitesmoke;
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    width: 97%;
 }
 
 .MainBar {
@@ -140,9 +142,12 @@ body {
 
 .RigthButtons {
     display: flex;
-    width: fit-content;
+    flex-wrap: wrap;
+    width: 500px;
     height: fit-content;
+    gap: 1em;
     padding: 3em;
+    justify-content: center;
 
 }
 
