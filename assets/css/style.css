@@ -175,12 +175,14 @@ body {
     .logo p {
         display: none;
     }
-    content {
+    .content {
         align-content: center;
-    };
+    }
     .content h1 {
-        font-size: 40px;
+        font-size: 2em;
         margin-bottom: 2em;
+        text-align: left;
+        white-space: pre-wrap;
     }
 
     .links {
