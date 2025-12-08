@@ -196,7 +196,11 @@ body {
         border-right: none;
         border-bottom: 1px solid whitesmoke;
     }
-
+    .RigthButtons{
+        flex-direction: column;
+        text-align: center;
+        width: fit-content;
+    }
     .hamburgerMenu {
         display: block;
         align-content: center;
